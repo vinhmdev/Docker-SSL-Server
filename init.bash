@@ -6,11 +6,11 @@ NGINX_HTTP_PORT="80"
 NGINX_HTTPS_PORT="443"
 STAGING_OPTION="--staging" # Set to "--staging" to use Let's Encrypt staging servers, or "" for production
 
-mkdir -p ~/Desktop/docker/ssl_server/nginx/config
-mkdir -p ~/Desktop/docker/ssl_server/nginx/html
-mkdir -p ~/Desktop/docker/ssl_server/nginx/logs
-mkdir -p ~/Desktop/docker/ssl_server/certbot/acme_challenge_files
-mkdir -p ~/Desktop/docker/ssl_server/certbot/config_etc_letsencrypt
+mkdir -p ./nginx/config
+mkdir -p ./nginx/html
+mkdir -p ./nginx/logs
+mkdir -p ./certbot/acme_challenge_files
+mkdir -p ./certbot/config_etc_letsencrypt
 
 cat > docker-compose.yaml <<EOF
 services:
