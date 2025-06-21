@@ -172,5 +172,5 @@ docker-compose restart nginx
 
 echo "Setup complete. Nginx should now be serving HTTPS for ${YOUR_DOMAIN} on host port ${NGINX_HTTPS_PORT}."
 echo "HTTP requests to host port ${NGINX_HTTP_PORT} should redirect to HTTPS."
-echo "Requests to / will be proxied to the application at host.docker.internal:6681, and /static/ will serve static files."
+echo "Requests to / will be proxied to the application at http://host.docker.internal:6681, and /static/ will serve static files."
 echo "You might need to run 'docker-compose down && docker-compose up -d' if restart doesn't pick up all volume changes immediately."
